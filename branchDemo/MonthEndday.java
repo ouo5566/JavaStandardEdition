@@ -14,8 +14,11 @@ public class MonthEndday{
 			case 9 :
 			case 11 : day = 30; break;
 			default : end = "ERROR";
+			}
+
+		if(month>0 && month<12){
+			end = "富老 : " + month + "岿 " + day +"老"; 
 		}
-		end = "富老 : " + month + "岿 " + day +"老";
 		System.out.println(end);
 	}
 }
