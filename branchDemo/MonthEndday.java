@@ -9,9 +9,9 @@ public class MonthEndday{
 		String end = "";
 		switch(month){
 			case 2 : day = 28; break;
-			case 4 : day = 30; break;
-			case 6 : day = 30; break;
-			case 9 : day = 30; break;
+			case 4 :
+			case 6 :
+			case 9 :
 			case 11 : day = 30; break;
 			default : end = "ERROR";
 		}

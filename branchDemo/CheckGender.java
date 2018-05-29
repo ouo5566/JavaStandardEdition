@@ -11,11 +11,11 @@ public class CheckGender{
 		char ch = id.charAt(7);
 
 		switch(ch){
-			case '1' : gender = "남" ; break;
-			case '2' : gender = "여" ; break;
+			case '1' :
 			case '3' : gender = "남" ; break;
+			case '2' :
 			case '4' : gender = "여" ; break;
-			case '5' : gender = "외국인" ; break;
+			case '5' :
 			case '6' : gender = "외국인" ; break;
 			default : System.out.println("다시 입력하세요."); return;
 		}
