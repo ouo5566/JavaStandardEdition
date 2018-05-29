@@ -1,24 +1,24 @@
 import java.util.Scanner;
-public class GradeReport{
+public class GradeReport02{
 	public static void main(String[] args){
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ì´ë¦„ ?");
+		System.out.println("ÀÌ¸§ ?");
 		String name = scan.next();
 
 		String error = "GRADE ERROR";
-		System.out.println("êµ­ì–´ì ìˆ˜ ?");
+		System.out.println("±¹¾îÁ¡¼ö ?");
 		int kor = scan.nextInt();
 		if(kor<0 || kor>100){
 			System.out.println(error);
 			return;
 		}
-		System.out.println("ì˜ì–´ì ìˆ˜ ?");
+		System.out.println("¿µ¾îÁ¡¼ö ?");
 		int eng = scan.nextInt();
 		if(eng<0 || eng>100){
 			System.out.println(error);
 			return;
 		}
-		System.out.println("ìˆ˜í•™ì ìˆ˜ ?");
+		System.out.println("¼öÇĞÁ¡¼ö ?");
 		int math = scan.nextInt();
 		if(math<0 || math>100){
 			System.out.println(error);
@@ -26,7 +26,7 @@ public class GradeReport{
 		}
 
 		int average = (kor + eng + math)/3;
-		int aver = average / 10
+		int aver = average / 10;
 		String grade = "F";
 		switch(aver){
 			case 9 : grade = "A"; break;
@@ -35,6 +35,6 @@ public class GradeReport{
 			case 6 : grade = "D"; break;
 			case 5 : grade = "E"; break;
 		}
-		System.out.println("ì´ë¦„ : "+ name + ", " + "í‰ê·  : " + average + ", " + "í•™ì  : " + grade);
+		System.out.println("ÀÌ¸§ : "+ name + ", " + "Æò±Õ : " + average + ", " + "ÇĞÁ¡ : " + grade);
 	}
 }
