@@ -6,7 +6,7 @@ public class MonthEndday{
 		int month = scan.nextInt();
 
 		int day = 31;
-		String end = "富老 : " + month + "岿 " + day +"老";
+		String end = "";
 		switch(month){
 			case 2 : day = 28; break;
 			case 4 : day = 30; break;
@@ -15,7 +15,7 @@ public class MonthEndday{
 			case 11 : day = 30; break;
 			default : end = "ERROR";
 		}
-
+		end = "富老 : " + month + "岿 " + day +"老";
 		System.out.println(end);
 	}
 }
