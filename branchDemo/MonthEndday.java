@@ -17,7 +17,7 @@ public class MonthEndday{
 			}
 
 		if(month>0 && month<12){
-			end = "말일 : " + month + "월 " + day +"일"; 
+			end = "Endday : " + month + ". " + day +"."; 
 		}
 		System.out.println(end);
 	}
